@@ -1,0 +1,109 @@
+---
+title: "Draco-Master"
+subtitle: "Home"
+
+header: false
+footer: '<p><a href="https://github.com/cityplug?tab=repositories"><i class="fab fa-github-alt"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://redi1.soccerstreams.net/"><i class="fas fa-futbol"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www3.gogoanime.cm/category/shingeki-no-kyojin-the-final-season-part-2"><i class="fas fa-dragon"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://anydesk.com/uk/downloads/thank-you?dv=win_exe"><i class="fas fa-download"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://dash.cloudflare.com/login/"><i class="fa-brands fa-cloudflare"></i></a></p>'
+
+stylesheet:
+  - "assets/custom.css"
+
+columns: "3" # Change this to any number: (1, 2, 3, 4, 6, 12)
+colors:
+  dark:
+    highlight-primary: "#181C3A"
+    highlight-secondary: "#181C3A"
+    highlight-hover: "#1F2347"
+    background: "#12152B"
+    card-background: "#181C3A"
+    text: "#EAEAEA"
+    text-header: "#7C71DD"
+    text-title: "#C1C1C1"
+    text-subtitle: "#8B8D9C"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#C1C1C1"
+    link-hover: "#C1C1C1"
+    background-image: "../assets/wallpaper.jpeg"
+
+  light:
+    highlight-primary: "#181C3A"
+    highlight-secondary: "#181C3A"
+    highlight-hover: "#1F2347"
+    background: "#12152B"
+    card-background: "#181C3A"
+    text: "#EAEAEA"
+    text-header: "#7C71DD"
+    text-title: "#C1C1C1"
+    text-subtitle: "#8B8D9C"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#C1C1C1"
+    link-hover: "#C1C1C1"
+    background-image: "../assets/wallpaper.jpeg"
+
+links:
+ - name: "Google.co.uk"
+   icon: "fas fa-search"
+   url: "https://www.google.co.uk/?gws_rd=ssl"
+   target: "_blank" # optional html a tag target attribute
+
+services:
+  - name: "// Local Services"
+    items:
+      - name: "Home Assistant "
+        logo: "assets/tools/ha.png"
+        subtitle: "Automation Panel"
+        tag: "core"
+        tagstyle: "is-link"
+        url: "http://192.168.50.15:8123"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Wireguard"
+        logo: "assets/tools/wireguard.png"
+        subtitle: "VPN Server"
+        tag: "app"
+        tagstyle: "is-link"
+        url: "#"
+        target: "_blank" # optional html a tag target attribute
+
+  - name: "// Services"
+    items:
+      - name: "Cockpit"
+        logo: "assets/tools/cockpit.png"
+        subtitle: "Server Management GUI"
+        tag: "service"
+        tagstyle: "is-success"
+        url: "#"
+        target: "_blank" # optional html a tag target attribute
+      - name: "PVE"
+        logo: "assets/tools/pve.png"
+        subtitle: "Proxmox VE"
+        tag: "core"
+        tagstyle: "is-link"
+        url: "https://192.168.50.11:8006"
+        target: "_blank" # optional html a tag target attribute
+
+  - name: "// Management"
+    items:
+      - name: "Portainer"
+        logo: "assets/tools/portainer.png"
+        subtitle: "Open Source Docker UI"
+        tag: "core"
+        tagstyle: "is-link"
+        url: "#"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Unifi Remote"
+        logo: "assets/tools/unifi.png"
+        subtitle: "Ubiquiti Remote Management"
+        tag: "core"
+        tagstyle: "is-link"
+        url: "https://unifi.cityplug.co.uk:8443"
+        target: "_blank" # optional html a tag target attribute
+
+  - name: "// Estate Management"
+    items:
+      - name: "Draco-00"
+        logo: "assets/tools/ghost.png"
+        subtitle: "Manage Server Estate"
+        tag: "bridge"
+        tagstyle: "is-link"
+        url: "#draco-00"
+#        target: "_blank" # optional html a tag target attribute

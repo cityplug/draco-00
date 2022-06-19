@@ -1,0 +1,14 @@
+Host pve
+  Hostname 192.168.50.11
+  User root
+  Port 22
+
+Host unifi
+  Hostname 192.168.50.6
+  User shay
+  Port 1792
+
+Host draco-01
+  Hostname 192.168.50.250
+  User shay
+  Port 4792
