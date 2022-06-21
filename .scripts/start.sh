@@ -36,7 +36,7 @@ passwd root
 echo "#  ---  Root password changed  ---  #"
 
 # --- Initialzing draco
-hostnamectl set-hostname draco.home.lan
+hostnamectl set-hostname draco-00.home.lan
 hostnamectl set-hostname "draco-00" --pretty
 rm -rf /etc/hosts
 mv /opt/draco-00/.scripts/hosts /etc/hosts

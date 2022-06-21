@@ -1,5 +1,5 @@
 127.0.0.1       localhost
-127.0.1.1       home.cityplug.co.uk draco.home.lan
+127.0.1.1       home.cityplug.co.uk draco-00.home.lan
 
 ::1             localhost ip6-localhost ip6-loopback
 ff02::1         ip6-allnodes
