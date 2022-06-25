@@ -61,7 +61,14 @@ services:
         subtitle: "VPN Server"
         tag: "app"
         tagstyle: "is-link"
-        url: "#"
+        url: "http://192.168.50.250:24792/"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Pihole-01"
+        logo: "assets/tools/pihole.png"
+        subtitle: "DNS & Ad Blocker"
+        tag: "service"
+        tagstyle: "is-success"
+        url: "http://192.168.50.250"
         target: "_blank" # optional html a tag target attribute
 
   - name: "// Services"

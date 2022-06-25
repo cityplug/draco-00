@@ -2,7 +2,6 @@
 
 # --- Docker Service
 docker ps
-systemctl enable docker
 
 # --- Build Homer
 docker stop homer

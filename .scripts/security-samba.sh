@@ -7,7 +7,7 @@ systemctl restart fail2ban
 
 # --- Addons
 groupadd ssh-users
-usermod -aG ssh-users,docker shay
+usermod -aG ssh-users shay
 sed -i '15i\AllowGroups ssh-users\n' /etc/ssh/sshd_config
 
 # --- Setup samba share and config

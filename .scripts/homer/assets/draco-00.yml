@@ -22,7 +22,7 @@ services:
   - name: "// Remote Services"
 #    icon: "fas fa-cloud"
     items:
-      - name: "Pihole"
+      - name: "Pihole-00"
         logo: "assets/tools/pihole.png"
         subtitle: "DNS & Ad Blocker"
         tag: "service"
