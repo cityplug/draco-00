@@ -10,9 +10,9 @@ services:
     image: pihole/pihole:latest
     environment:
       TZ: Europe/London
-      WEBPASSWORD: Szxs234.
+      WEBPASSWORD:
       ServerIP: 192.168.50.253
-    hostname: draco.pihole
+    hostname: draco-00.pihole
     volumes:
       - /srv/.AppData/pihole:/etc/pihole/
       - /srv/.AppData/pihole/dnsmasq:/etc/dnsmasq.d/
