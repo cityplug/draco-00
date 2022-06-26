@@ -25,7 +25,6 @@ usermod -aG sambashare shay
 echo "UUID=D8D3-CE07 /srv/storage/  auto   defaults,user,nofail  0   0" >> /etc/fstab
 
 mount -a
-chown -R shay:shay /srv/storage/
 chmod -R 777 /srv/storage/
 echo "#  ---  Samba share created --- #"
 
