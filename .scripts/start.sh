@@ -58,7 +58,7 @@ echo \
 apt update && apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 
 # --- Install Docker-Compose
-curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/$(curl https://github.com/docker/compose/releases | grep -m1 '<a href="/docker/compose/releases/download/' | grep -o 'v[0-9:].[0-9].[0-9]')/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
 chmod +x /usr/local/bin/docker-compose
 
