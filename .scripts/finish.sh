@@ -5,8 +5,8 @@ docker ps
 
 # --- Build Homer
 docker stop homer
-rm -rf /srv/.AppData/homer/*
-mv /opt/draco-00/.scripts/homer/assets /srv/.AppData/homer/assets
+rm -rf /draco/.AppData/homer/*
+mv /opt/draco-00/.scripts/homer/assets /draco/.AppData/homer/assets
 docker start homer
 
 echo "

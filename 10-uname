@@ -17,7 +17,7 @@ IP Addresses.......: `ip a | grep glo | awk '{print $2}' | head -1 | cut -f1 -d/
 Uptime.............: ${UPTIME}
 
 $(tput sgr0)"
-df -hT /srv/root
+df -hT /draco/storage
 echo
-df -hT /srv/
+df -hT /draco/
 echo

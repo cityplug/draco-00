@@ -22,10 +22,10 @@ echo
 /etc/init.d/nmbd restart
 usermod -aG sambashare shay
 # --- Mount USB
-echo "UUID=D8D3-CE07 /srv/storage/  auto   defaults,user,nofail  0   0" >> /etc/fstab
+echo "UUID=D8D3-CE07 /draco/storage/  auto   defaults,user,nofail  0   0" >> /etc/fstab
 
 mount -a
-chmod -R 777 /srv/storage/
+chmod -R 777 /draco/storage/
 echo "#  ---  Samba share created --- #"
 
 # ----> Next Script

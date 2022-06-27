@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Backup AppData
-tar -czf /srv/root/backups/AppData-$(date -I).tar.gz /srv/.AppData/*
+tar -czf /draco/root/backups/AppData-$(date -I).tar.gz /draco/.AppData/*
 
 # Deletion of files 4 days & older
-find /srv/root/backups/ -type f -iname "*.tar.gz" -mtime +4 -delete
+find /draco/root/backups/ -type f -iname "*.tar.gz" -mtime +4 -delete

@@ -14,8 +14,8 @@ services:
       ServerIP: 192.168.50.253
     hostname: draco-00.pihole
     volumes:
-      - /srv/.AppData/pihole:/etc/pihole/
-      - /srv/.AppData/pihole/dnsmasq:/etc/dnsmasq.d/
+      - /draco/.AppData/pihole:/etc/pihole/
+      - /draco/.AppData/pihole/dnsmasq:/etc/dnsmasq.d/
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
@@ -28,7 +28,7 @@ services:
     image: b4bz/homer
     hostname: homer  
     volumes:
-      - /srv/.AppData/homer/assets:/www/assets
+      - /draco/.AppData/homer/assets:/www/assets
     ports:
       - 85:8080
     restart: always
@@ -43,7 +43,7 @@ services:
       MEM_STARTUP: 1024
     hostname: unifi
     volumes:
-      - /srv/.AppData/unifi/config:/config
+      - /draco/.AppData/unifi/config:/config
     ports:
       - 3478:3478/udp
       - 10001:10001/udp
