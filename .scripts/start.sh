@@ -22,7 +22,7 @@ systemd-fsck-root.service systemd-logind.service wpa_supplicant.service \
 bluetooth.service apt-daily.service apt-daily.timer apt-daily-upgrade.timer apt-daily-upgrade.service
 
 # --- Over clcok raspberry pi & increase GPU
-sed -i '40i\over_voltage=2\narm_freq=1750\n' /boot/config.txt
+sed -i '40i\over_voltage=6\narm_freq_min=1000\narm_freq=2000\n' /boot/config.txt
 
 # --- Disable Bluetooth & Wifi
 echo "
