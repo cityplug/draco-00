@@ -70,7 +70,8 @@ usermod -aG docker shay && docker-compose --version
 echo "#  ---  Running Addons  ---  #"
 mkdir -p /draco
 mkdir -p /draco/.AppData/
-mkdir -p /draco/storage/ && chown -R shay:shay /draco/storage/
+mkdir -p /draco/storage/
+# chown -R shay:shay /draco/storage/
 
 rm -rf /etc/update-motd.d/* && rm -rf /etc/motd
 rm -rf /etc/issue.d/cockpit.issue /etc/motd.d/cockpit

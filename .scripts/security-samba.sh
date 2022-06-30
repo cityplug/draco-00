@@ -25,7 +25,9 @@ usermod -aG sambashare shay
 echo "UUID=D8D3-CE07 /draco/storage/  auto   defaults,user,nofail  0   0" >> /etc/fstab
 
 mount -a
-chmod -R 777 /draco/storage/
+chmod 777 -R /draco/storage/*
+#chmod -R 777 root /draco/storage/
+
 echo "#  ---  Samba share created --- #"
 
 # ----> Next Script
