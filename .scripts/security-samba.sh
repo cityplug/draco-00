@@ -2,7 +2,7 @@
 
 # --- Secure Fail2Ban
 echo "#  ---  Securing fail2ban --- #"
-mv /opt/draco-00/.scripts/jail.local /etc/fail2ban/jail.local
+cp /opt/draco-00/.scripts/jail.local /etc/fail2ban/jail.local
 systemctl restart fail2ban
 
 # --- Addons
@@ -14,7 +14,7 @@ sed -i '15i\AllowGroups ssh-users\n' /etc/ssh/sshd_config
 echo "#  ---  Setting up samba share --- #"
 systemctl stop smbd
 mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
-mv /opt/draco-00/.scripts/smb.conf /etc/samba/
+cp /opt/draco-00/.scripts/smb.conf /etc/samba/
 echo "#  ---  Create samba user password --- #"
 smbpasswd -a shay
 echo

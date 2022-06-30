@@ -39,7 +39,7 @@ echo "#  ---  Root password changed  ---  #"
 hostnamectl set-hostname draco-00.home.lan
 hostnamectl set-hostname "draco-00" --pretty
 rm -rf /etc/hosts
-mv /opt/draco-00/.scripts/hosts /etc/hosts
+cp /opt/draco-00/.scripts/hosts /etc/hosts
 
 # --- Install Packages
 echo "#  ---  Installing New Packages  ---  #"
@@ -74,9 +74,9 @@ mkdir -p /draco/storage/ && chown -R shay:shay /draco/storage/
 
 rm -rf /etc/update-motd.d/* && rm -rf /etc/motd
 rm -rf /etc/issue.d/cockpit.issue /etc/motd.d/cockpit
-mv /opt/draco-00/10-uname /etc/update-motd.d/ && chmod +x /etc/update-motd.d/10-uname
+cp /opt/draco-00/10-uname /etc/update-motd.d/ && chmod +x /etc/update-motd.d/10-uname
 
-mv /opt/draco-00/.scripts/ssh_config /home/shay/.ssh/config
+cp /opt/draco-00/.scripts/ssh_config /home/shay/.ssh/config
 
 # --- Backup Script
 (crontab -l 2>/dev/null; echo "0 1 * * * /opt/draco-00/.scripts/backup.sh") | crontab -
