@@ -3,12 +3,12 @@ Host pve
   User root
   Port 22
 
-Host unifi
+Host Unifi - VM
   Hostname 192.168.50.6
   User shay
   Port 1792
 
-Host draco-01
+Host Draco-VM
   Hostname 192.168.50.250
   User shay
   Port 4792

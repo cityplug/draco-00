@@ -2,7 +2,7 @@
 
 # --- Secure Fail2Ban
 echo "#  ---  Securing fail2ban --- #"
-cp /opt/draco-00/.scripts/jail.local /etc/fail2ban/jail.local
+cp /opt/draco-bm/.scripts/jail.local /etc/fail2ban/jail.local
 systemctl restart fail2ban
 
 # --- Addons
@@ -14,7 +14,7 @@ sed -i '15i\AllowGroups ssh-users\n' /etc/ssh/sshd_config
 echo "#  ---  Setting up samba share --- #"
 systemctl stop smbd
 mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
-cp /opt/draco-00/.scripts/smb.conf /etc/samba/
+cp /opt/draco-bm/.scripts/smb.conf /etc/samba/
 echo "#  ---  Create samba user password --- #"
 smbpasswd -a shay
 echo
@@ -26,8 +26,6 @@ echo "UUID=D8D3-CE07 /draco/storage/  auto   defaults,user,nofail  0   0" >> /et
 
 mount -a
 chmod 777 -R /draco/storage/*
-#chmod -R 777 root /draco/storage/
-
 echo "#  ---  Samba share created --- #"
 
 # ----> Next Script

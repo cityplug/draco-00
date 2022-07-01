@@ -63,7 +63,7 @@ services:
         tagstyle: "is-link"
         url: "http://192.168.50.250:24792/"
         target: "_blank" # optional html a tag target attribute
-      - name: "Pihole-01"
+      - name: "Pihole-VM"
         logo: "assets/tools/pihole.png"
         subtitle: "DNS & Ad Blocker"
         tag: "service"
@@ -97,7 +97,7 @@ services:
         tagstyle: "is-link"
         url: "#"
         target: "_blank" # optional html a tag target attribute
-      - name: "Unifi Remote"
+      - name: "Unifi Cloud"
         logo: "assets/tools/unifi.png"
         subtitle: "Ubiquiti Remote Management"
         tag: "core"
@@ -107,10 +107,10 @@ services:
 
   - name: "// Estate Management"
     items:
-      - name: "Draco-00"
+      - name: "Draco-BM"
         logo: "assets/tools/ghost.png"
         subtitle: "Manage Server Estate"
         tag: "bridge"
         tagstyle: "is-link"
-        url: "#draco-00"
+        url: "#draco-bm"
 #        target: "_blank" # optional html a tag target attribute

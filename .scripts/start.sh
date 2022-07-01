@@ -36,10 +36,10 @@ passwd root
 echo "#  ---  Root password changed  ---  #"
 
 # --- Initialzing draco
-hostnamectl set-hostname draco-00.home.lan
-hostnamectl set-hostname "draco-00" --pretty
+hostnamectl set-hostname Draco-BM.home.lan
+hostnamectl set-hostname "Draco-BM" --pretty
 rm -rf /etc/hosts
-cp /opt/draco-00/.scripts/hosts /etc/hosts
+cp /opt/draco-bm/.scripts/hosts /etc/hosts
 
 # --- Install Packages
 echo "#  ---  Installing New Packages  ---  #"
@@ -71,16 +71,15 @@ echo "#  ---  Running Addons  ---  #"
 mkdir -p /draco
 mkdir -p /draco/.AppData/
 mkdir -p /draco/storage/
-# chown -R shay:shay /draco/storage/
 
 rm -rf /etc/update-motd.d/* && rm -rf /etc/motd
 rm -rf /etc/issue.d/cockpit.issue /etc/motd.d/cockpit
-cp /opt/draco-00/10-uname /etc/update-motd.d/ && chmod +x /etc/update-motd.d/10-uname
+cp /opt/draco-bm/10-uname /etc/update-motd.d/ && chmod +x /etc/update-motd.d/10-uname
 
-cp /opt/draco-00/.scripts/ssh_config /home/shay/.ssh/config
+cp /opt/draco-bm/.scripts/ssh_config /home/shay/.ssh/config
 
 # --- Backup Script
-(crontab -l 2>/dev/null; echo "0 1 * * * /opt/draco-00/.scripts/backup.sh") | crontab -
+(crontab -l 2>/dev/null; echo "0 1 * * * /opt/draco-bm/.scripts/backup.sh") | crontab -
 
 # --- Create and allocate swap
 echo "#  ---  Creating 4GB swap file  ---  #"

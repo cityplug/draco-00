@@ -6,13 +6,13 @@ networks:
 
 services:
   pihole:
-    container_name: pihole
+    container_name: pihole_BM
     image: pihole/pihole:latest
     environment:
       TZ: Europe/London
       WEBPASSWORD:
       ServerIP: 192.168.50.253
-    hostname: draco-00.pihole
+    hostname: Draco-BM.pihole
     volumes:
       - /draco/.AppData/pihole:/etc/pihole/
       - /draco/.AppData/pihole/dnsmasq:/etc/dnsmasq.d/
@@ -34,7 +34,7 @@ services:
     restart: always
 
   unifi:
-    container_name: unifi
+    container_name: unifi-home
     image: lscr.io/linuxserver/unifi-controller:latest
     environment:
       PUID: 0
